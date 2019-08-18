@@ -1,0 +1,71 @@
+<!doctype html>
+<heml>
+    <head>
+        <meta charset="utf-8">
+        <title>
+
+        </title>
+        <style>
+            .js{
+                font-weight: blod;
+            }
+            #frist{
+                color:green;
+            }
+            input{
+                color:blueviolet;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>test site</h1>
+        <input type="button" value="night" onclick="
+        document.querySelector('body').style.backgroundColor = 'black';
+        document.querySelector('body').style.color = 'white';
+        ">
+         <input type="button" value="day" onclick="
+         document.querySelector('body').style.backgroundColor = 'white';
+         document.querySelector('body').style.color = 'black';
+         ">
+         <br>
+    
+        <input id="nightday" type="button" value="night" onclick="
+        if(document.querySelector('#nightday').value === 'night')
+        {
+        document.querySelector('body').style.backgroundColor = 'black';
+        document.querySelector('body').style.color = 'white';
+        document.querySelector('#nightday').value = 'day'
+        }
+        else
+        {
+        document.querySelector('body').style.backgroundColor = 'white';
+        document.querySelector('body').style.color = 'black';
+        document.querySelector('#nightday').value ='night'
+        }
+        ">
+        <span class="js">
+            class중복가능 여러개를 한꺼번에 제어
+        </span>
+        <span id="frist">
+            id중복불가 한개만 제어
+        </span>
+        === 좌항과 우항의 관계를 나타냄 
+        <br>
+        <h3>1===1</h3>
+        <script>
+            document.write("1===1");
+        </script>
+
+         <h3>1===2</h3>
+         <script>
+               document.write("1===2");
+         </script>
+
+         <h3>1&lt;2</h3>
+         <script>
+         document.write("1<2");
+         </script>
+
+
+    </body>
+</heml>
